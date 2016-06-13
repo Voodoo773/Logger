@@ -1,16 +1,16 @@
 <?php
 class Logger {
 
-	protected $log;
+	static protected $log = [];
 
 	private function __construct() {}
 
 	public static function add($message) {
-		$this->$log[] = $message;
+	    static::$log[] = $message;
 	}
 
 	public static function get() {
-		return $this->log;
+		return self::$log;
 	}
 
 }
