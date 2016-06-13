@@ -2,12 +2,12 @@
     "name": "halytskyi/logger",
     "type": "library",
     "version" : "0.0.1",
+    "require": {
+        "php": ">=5.0.0"
+    },
     "autoload": {
         "psr-0": {
             "Logger": ""
         }
-    },
-    "require": {
-        "php": ">=5.0.0"
     }
 }
