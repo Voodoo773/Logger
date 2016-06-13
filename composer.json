@@ -1,7 +1,11 @@
 {
     "name": "halytskyi/logger",
-    "version": "0.0.1",
-    "dist": {
-        "url": "https://github.com/halytskyi/Logger",
+    "type": "library",
+    "keywords": ["log","logging"],
+    "homepage": "http://github.com/halytskyi/logger",
+    "autoload": {
+        "psr-0": {
+            "Logger": ""
+        }
     }
 }
