@@ -1,4 +1,7 @@
 {
+    "name": "halytskyi/logger",
+    "type": "package",
+    "version" : "0.0.1",
     "autoload": {
         "psr-0": {
             "Logger": ""
