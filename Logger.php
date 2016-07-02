@@ -19,7 +19,7 @@ class Logger {
 		return self::$log;
 	}
 	
-	public static function dismount($object) {
+	protected static function dismount($object) {
 	    $reflectionClass = new ReflectionClass(get_class($object));
 	    
 	    $array = array();
