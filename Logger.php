@@ -20,6 +20,12 @@ class Logger {
 	}
 	
 	protected static function dismount($object) {
+		
+	    if ($object instanceof ArrayObject) {
+	        $object->setFlags(ArrayObject::STD_PROP_LIST|ArrayObject::ARRAY_AS_PROPS);
+	        return $object->getArrayCopy();
+	    }
+	    
 	    $reflectionClass = new ReflectionClass(get_class($object));
 	    
 	    $array = array();
